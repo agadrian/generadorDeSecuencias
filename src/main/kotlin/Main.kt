@@ -1,7 +1,7 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+// Hacer un menu y pasarle la consola en el construcotr (IConsola)
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+// usar .tolist() ,  .jointostrinig etc
+fun main(args: Array<String>) {
+    //val menu = Menu()
+
 }
