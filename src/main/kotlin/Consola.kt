@@ -1,8 +1,8 @@
 ///
 
 interface IConsola{
-    fun mostrar(mensage: String, newLine: Boolean = false)
-    fun leerNum(msj: String)
+    fun mostrar(mensage: String, newLine: Boolean = true)
+    fun leerNum(msj: String): Int?
 
 }
 
@@ -10,10 +10,11 @@ class Consola: IConsola {
 
 
     override fun mostrar(mensage: String, newLine: Boolean) {
-        TODO("Not yet implemented")
+        if (!newLine) print(mensage) else println(mensage)
     }
 
-    override fun leerNum(msj: String) {
-        TODO("Not yet implemented")
+    override fun leerNum(msj: String): Int? {
+        mostrar(msj)
+        return readln().toIntOrNull()
     }
 }
