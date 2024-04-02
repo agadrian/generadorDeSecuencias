@@ -2,6 +2,10 @@
 
 // usar .tolist() ,  .jointostrinig etc
 fun main(args: Array<String>) {
-    //val menu = Menu()
+    val consola = Consola()
+    val generadorSecuencia = GeneradorSecuencia(consola)
+    val menu = Menu(generadorSecuencia, consola)
+    menu.menuPrincipal()
+
 
 }
